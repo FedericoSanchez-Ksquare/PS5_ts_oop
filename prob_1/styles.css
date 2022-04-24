@@ -1,0 +1,219 @@
+/* * {
+
+    border: 2px;
+
+    border-style: solid;
+
+    border-color: (pick a color you like but visible);
+
+} */
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-image: url("./images/image(1).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.general-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+.grid-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:50px 100px;
+    width: auto;
+    height: 60%;
+    background-color: #0d1323;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    width: auto;
+    height: 65%;
+    gap: 20px;
+    color: white;
+}
+.card-size{
+    background-color: orange;
+    width: 185px;
+    height: 100%;
+    border-radius: 20px;   
+}
+
+.back{
+    display: flex;
+    align-items: end;
+}
+.bgBackWork{
+    background-color:#ff8b65;
+}
+.bgBackPlay{
+    background-color:#56c2e6;
+}
+.bgBackStudy{
+    background-color: #ff5e7d;
+}
+.bgBackExercise{
+    background-color: #4bcf83;
+}
+.bgBackSocial{
+    background-color: #7235d1;
+}
+.bgBackSelfcare{
+    background-color: #f1c75b;
+}
+.backUser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1d204b;
+}
+.user {
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #5746ea;
+    width: 100%;
+    height: 70%;
+}
+.innerUser{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 35px;
+}
+.userLower{
+    display: flex;
+    align-items:start;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 25px;
+    margin-right: 40px;
+    height: 65px;
+    
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    background-color: #1d204b;
+    border-radius: 16px;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    height: 80%;
+}
+.play-content{
+    display: flex;
+    flex-direction: column;
+    background-color: #1d204b;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+.study{
+    display: flex;
+    flex-direction: column;
+    background-color: #1d204b;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+.exercise{
+    display: flex;
+    flex-direction: column;
+    background-color: #1d204b;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    background-color: #1d204b;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+.selfcare{
+    display: flex;
+    flex-direction: column;
+    background-color: #1d204b;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+
+.title{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+    width: inherit;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    width: 85%;
+    height: inherit;
+    margin-left: 29px;
+}
+.innerContent{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    width: inherit;
+    height: inherit;
+}
+.btnSpace{
+    display: flex;
+    justify-content: space-between;
+}
+.hours{
+    font-size: 30px;
+}
+button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-right: 20px;
+}
+
+.span-2{
+    grid-row: 1/3;
+}
+.name{
+    font-size: 25px;
+}
+img{
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    border: white;
+    margin-bottom: 40px;
+    margin-right: 70px;
+}

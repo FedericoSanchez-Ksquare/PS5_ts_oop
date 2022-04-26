@@ -22,6 +22,10 @@ const self = document.getElementById("selfCareId");
 const selfHours = document.getElementById("selfHoursId");
 const selfPeriod = document.getElementById("selfPeriodId");
 
+const btnDaily = document.getElementById("btnDaily");
+const btnWeekly = document.getElementById("btnWeekly");
+const btnMonthly = document.getElementById("btnMonthly");
+
 const getDataDaily = async () => {
   let data;
   let res = await fetch(
@@ -135,6 +139,9 @@ const getDataMonthly = async () => {
 };
 
 const getDataOnLoad = async () => {
+  btnDaily.setAttribute("style", "color: white");
+  btnWeekly.setAttribute("style", "color:rgba(255, 255, 255, 0.63)");
+  btnMonthly.setAttribute("style", "color:rgba(255, 255, 255, 0.63)");
   let data;
   let res = await fetch(
     "https://gist.githubusercontent.com/carmandomx/b27e23332eda1d061feb3cdada26afc0/raw/438d33407442d2abbf605e87336f48a83ccff3f5/data.json"
@@ -170,6 +177,26 @@ const getDataOnLoad = async () => {
   selfHours.innerText = data[5].timeframes.daily.current + " Hours";
   selfPeriod.innerText =
     "Last day - " + data[5].timeframes.daily.previous + "hrs";
+};
+
+const buttonSelected = (value) => {
+  switch (value) {
+    case 1:
+      btnDaily.setAttribute("style", "color: white");
+      btnWeekly.setAttribute("style", "color:rgba(255, 255, 255, 0.63)");
+      btnMonthly.setAttribute("style", "color:rgba(255, 255, 255, 0.63)");
+      break;
+    case 2:
+      btnWeekly.setAttribute("style", "color:white");
+      btnDaily.setAttribute("style", "color:rgba(255, 255, 255, 0.63)");
+      btnMonthly.setAttribute("style", "color:rgba(255, 255, 255, 0.63)");
+      break;
+    case 3:
+      btnMonthly.setAttribute("style", "color:white");
+      btnWeekly.setAttribute("style", "color:rgba(255, 255, 255, 0.63)");
+      btnDaily.setAttribute("style", "color:rgba(255, 255, 255, 0.63)");
+      break;
+  }
 };
 
 getDataOnLoad();

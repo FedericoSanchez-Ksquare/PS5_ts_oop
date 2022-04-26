@@ -13,16 +13,16 @@
             <div class="wrapper">
                 <div class="backUser card-size span-2 ">
                     <div class="user">
-                        <img src="" alt="">
+                        <img src="./images/hellothere.jpeg" alt="">
                         <div class="innerUser">
-                            <label>Report for</label>
+                            <label class="report">Report for</label>
                             <label class="name">Jeremy Robson</label>
                         </div>
                     </div>
                     <div class="userLower">
-                        <button onclick="getDataDaily()">Daily</button>
-                        <button onclick="getDataWeekly()">Weekly</button>
-                        <button onclick="getDataMonthly()">Monthly</button>
+                        <button onclick="getDataDaily(), buttonSelected(1)"  id="btnDaily">Daily</button>
+                        <button onclick="getDataWeekly(), buttonSelected(2)"  id="btnWeekly">Weekly</button>
+                        <button onclick="getDataMonthly(), buttonSelected(3)" id="btnMonthly">Monthly</button>
                     </div>
                 </div>
                 <div class="back bgBackWork card-size">
@@ -34,7 +34,7 @@
                             </div>
                             <div class="innerContent">
                                 <label class="hours" id="workHoursId"></label>
-                                <label id="workPeriodId">period</label>
+                                <label id="workPeriodId" class="period">period</label>
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                             </div>
                             <div class="innerContent">
                                 <label class="hours" id="playHoursId">32 Hours</label>
-                                <label id="playPeriodId">period</label>
+                                <label id="playPeriodId" class="period">period</label>
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                             </div>
                             <div class="innerContent">
                                 <label class="hours" id="studyHoursId">32 Hours</label>
-                                <label id="studyPeriodId">period</label>
+                                <label id="studyPeriodId" class="period">period</label>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                             </div>
                             <div class="innerContent">
                                 <label class="hours" id="exerciseHoursId">32 Hours</label>
-                                <label id="exercisePeriodId">period</label>
+                                <label id="exercisePeriodId" class="period">period</label>
                             </div>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
                             </div>
                             <div class="innerContent">
                                 <label class="hours" id="socialHoursId">32 Hours</label>
-                                <label id="socialPeriodId">period</label>
+                                <label id="socialPeriodId" class="period">period</label>
                             </div>
                         </div>
                     </div>
@@ -104,7 +104,7 @@
                             </div>
                             <div class="innerContent">
                                 <label class="hours" id="selfHoursId">32 Hours</label>
-                                <label id="selfPeriodId">period</label>
+                                <label id="selfPeriodId" class="period">period</label>
                             </div>
                         </div>
                     </div>
